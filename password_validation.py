@@ -5,16 +5,16 @@ print('A valid password should have 6-16 charecters')
 print('A valid password should contain any special characters from(@!#$%^)')
 password = input('Create a valid password:   ')
 
-charecters = [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
-if int(len(password)) in charecters:
+characters = [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+if int(len(password)) in characters:
     pass   
 else:
     print('Inappropriate charecters')
 
-special_charecters = ['!', '@', '#', '$', '%', '^']
-for charecter in password:
-    if charecter in special_charecters:
-        special_charecter = special_charecter + 1
+special_characters = ['!', '@', '#', '$', '%', '^']
+for character in password:
+    if character in special_characters:
+        special_character = special_character + 1
 if special_charecter == 0:
     print('None of the special charecters have been included')
 
